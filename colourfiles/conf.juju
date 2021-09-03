@@ -1,0 +1,39 @@
+# DEBUG
+regexp=\sDEBUG\s
+colours=green
+count=once
+-
+# INFO
+regexp=\sINFO\s
+colours=bold blue
+count=once
+-
+# WARNING
+regexp=\sWARNING\s
+colours=bold yellow
+count=once
+-
+# ERROR
+regexp=\sERROR\s
+colours=bold red
+count=once
+-
+# Events
+regexp=Emitting Juju event (.+)
+colours=bold white
+count=once
+-
+# unit
+regexp=unit\.(.+/\d+)\.juju-log\s
+colours=default,cyan,default
+count=once
+-
+# relation name + id
+regexp=\s[^: ]+:\d+:\s
+colours=bold cyan
+count=once
+-
+# address
+regexp=(?:(https?://))?(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|localhost)(?:(:\d+))?
+colours=bold green
+
