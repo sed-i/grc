@@ -1,0 +1,35 @@
+# Main header
+regexp=(Model)\s+Controller\s+Cloud/Region\s+Version\s+SLA\s+Timestamp
+colours=none,bold white
+count=once
+-
+# Apps
+regexp=(App)\s+Version\s+Status\s+Scale\s+Charm\s+Store\s+Channel\s+Rev\s+OS\s+Address\s+Message
+colours=none,bold white
+count=once
+-
+# Units
+regexp=(Unit)\s+Workload\s+Agent\s+Address\s+Ports\s+Message
+colours=none,bold white
+count=once
+-
+# Relations
+regexp=(Relation) provider\s+Requirer\s+Interface\s+Type\s+Message
+colours=none,bold white
+count=once
+-
+# Storage
+regexp=(Storage Unit)\s+Storage id\s+Type\s+(?:(Pool\s+))?Mountpoint\s+Size\s+Status\s+Message
+colours=none,bold white
+count=once
+-
+# Model
+regexp=Model\s+(?:(UUID\s+))?Cloud/Region\s+Type\s+Status\s+Access\s+Last connection
+colours=bold white
+count=once
+-
+# Current/leader
+regexp=[^ ]+\*\s
+colours=green
+count=once
+
